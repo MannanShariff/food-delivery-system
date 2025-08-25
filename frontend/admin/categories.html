@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories - Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Manage Categories</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="foods.html">Manage Foods</a></li>
+                <li><a href="orders.html">View Orders</a></li>
+                <li><a href="delivery.html">Delivery Details</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="category-section">
+            <form id="add-category-form">
+                <input type="text" id="category-name" placeholder="Category Name" required>
+                <button type="submit">Add Category</button>
+            </form>
+            <h2>Categories</h2>
+            <ul id="category-list"></ul>
+        </div>
+    </div>
+    <script src="../js/admin-categories.js"></script>
+</body>
+</html> 

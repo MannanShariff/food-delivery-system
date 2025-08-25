@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - Food Delivery</title>
+    <link rel="stylesheet" href="../css/customer.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Customer Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="foods.html">Browse Foods</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="delivery.html">Delivery Details</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="customer-content">
+            <p>Welcome! Use the navigation above to explore and order food.</p>
+        </div>
+    </div>
+    <script src="../js/customer-dashboard.js"></script>
+    <script>
+        window.addEventListener('load', async function() {
+            await fetchCategories();
+            fetchFoods();
+        });
+    </script>
+</body>
+</html> 

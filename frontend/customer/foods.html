@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Foods - Customer</title>
+    <link rel="stylesheet" href="../css/customer.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Browse Foods</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="delivery.html">Delivery Details</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="foods-section">
+            <input type="text" id="search-food" placeholder="Search foods...">
+            <select id="filter-category"></select>
+            <button id="search-btn">Search</button>
+            <h2>Foods</h2>
+            <table id="foods-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/customer-foods.js"></script>
+    <script src="../js/customer-delivery.js"></script>
+</body>
+</html> 

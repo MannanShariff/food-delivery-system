@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Details - Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Delivery Details</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="categories.html">Manage Categories</a></li>
+                <li><a href="foods.html">Manage Foods</a></li>
+                <li><a href="orders.html">View Orders</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="delivery-section">
+            <h2>All Deliveries</h2>
+            <table id="delivery-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <h3>Add/Update Delivery</h3>
+            <form id="delivery-form">
+                <input type="number" id="order-id" placeholder="Order ID" required>
+                <input type="text" id="delivery-address" placeholder="Address" required>
+                <input type="text" id="delivery-status" placeholder="Status" required>
+                <button type="submit">Save Delivery</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/admin-delivery.js"></script>
+</body>
+</html> 

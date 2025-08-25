@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Foods - Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Manage Foods</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="categories.html">Manage Categories</a></li>
+                <li><a href="orders.html">View Orders</a></li>
+                <li><a href="delivery.html">Delivery Details</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="food-section">
+            <form id="add-food-form">
+                <input type="text" id="food-name" placeholder="Food Name" required>
+                <select id="food-category" required></select>
+                <input type="number" id="food-price" placeholder="Price" step="0.01" required>
+                <input type="text" id="food-description" placeholder="Description">
+                <button type="submit">Add Food</button>
+            </form>
+            <h2>Foods</h2>
+            <table id="foods-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/admin-foods.js"></script>
+</body>
+</html> 
